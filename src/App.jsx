@@ -4,6 +4,9 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { store } from './store/store.js'
 import { Provider } from 'react-redux'
 import { Footer } from "./components/Footer/Footer"
+import Register from "./components/Register/Register"
+import { Login } from "./assets/Login/Login"
+import { AuthProvider } from "./contex/AuthProvider"
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -27,9 +30,12 @@ function App() {
     <>
       <Provider store={store}>
     <GlobalStyles/>
+    <Register/>
+    <Login/>
      <Navbar/>
      <Header/>
      <Footer/>
+     
      </Provider>
     </>
   )

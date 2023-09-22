@@ -43,10 +43,12 @@ const LeftNavbar = styled.div`
 justify-content: space-around;
 display: flex;
 align-items: center;
+text-align: center;
 gap: 20px;
 
 `
 const ButtonMain = styled.button`
+margin-bottom: 15px;
 width: 170px;
 background-color: red;
 border-radius: 15px;
